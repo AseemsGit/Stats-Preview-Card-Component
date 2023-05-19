@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/responsive-stats-preview-card-component-aX3qhlpmth))
+- Live Site URL: [Live site](https://ephemeral-bubblegum-4f15ec.netlify.app/)
 
 ### Built with
 
