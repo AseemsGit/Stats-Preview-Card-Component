@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --MAIN-BG-COLOR: hsl(233, 47%, 7%);
+    --CARD-BG-COLOR: hsl(244, 38%, 16%);
+    --VIOLET-ACCENT: hsl(277, 64%, 61%);
+    --HEADING-STATS-COLOR: hsl(0, 0%, 100%);
+    --MAIN-P-COLOR: hsla(0, 0%, 100%, 0.75);
+    --STAT-HD-COLOR: hsla(0, 0%, 100%, 0.6); 
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;   
+    background-color: var(--MAIN-BG-COLOR);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+article {
+    background-color: var(--CARD-BG-COLOR);
+    margin: 1.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.stats__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stats__img {
+    position: relative;
+}
+
+.stats__img::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--VIOLET-ACCENT);
+    opacity: 0.6;
+
+}
+
+.stats__info {
+    color: var(--HEADING-STATS-COLOR);
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.stats__h1 {
+    font-size: 1.7rem;
+}
+.span_h1 {
+    color: var(--VIOLET-ACCENT);
+}
+
+.stats__p {
+    line-height: 1.6;
+    color: var(--MAIN-P-COLOR);
+}
+
+.stats__ul {
+    display: grid;
+    gap: 2rem;
+}   
+.stat {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+.heading { 
+    color: var(--STAT-HD-COLOR);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media (min-width: 768px) {
+
+    article {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats__info {
+        text-align: left;
+        padding: 4rem 6rem 4rem 4rem;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .stats__ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .stats__h1 {
+        font-size: 2rem;
+    }
+
+    .stat {
+        font-size: 1.6rem;
+    }
+}
