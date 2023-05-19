@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/responsive-stats-preview-card-component-aX3qhlpmth))
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-stats-preview-card-component-aX3qhlpmth)
 - Live Site URL: [Live site](https://ephemeral-bubblegum-4f15ec.netlify.app/)
 
 ### Built with
